@@ -228,14 +228,6 @@ samp {
 }
 
 /**
- * Add the correct margin in IE 8.
- */
-
-figure {
-    margin: 1em 40px;
-}
-
-/**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
@@ -765,10 +757,11 @@ body > nav {
 }
 
 .filter {
+    position: relative;
     display: inline-block;
     vertical-align: top;
-    width: 220px;
-    margin-right: 20px;
+    width: 218px;
+    min-height: 592px;
 }
 
 .filter h3 {
@@ -778,6 +771,11 @@ body > nav {
     line-height: 30px;
     text-transform: uppercase;
     margin: 0 0 30px;
+}
+
+.filter > button {
+    position: absolute;
+    bottom: 24px;
 }
 
 .makers {
@@ -840,12 +838,84 @@ body > nav {
 }
 
 .products {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 702px;
+    margin-left: 20px;
+    font-size: 0;
+}
+
+.product {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 220px;
+    height: 286px;
+    margin: 0 0 20px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    border: none;
+    outline: none;
     font-family: inherit;
-    font-size: 14px;
+    font-size: 0;
     font-weight: bold;
     line-height: 18px;
     text-transform: uppercase;
 }
+
+.product:nth-child(3n-2) {
+    margin-left: 0;
+}
+
+.product > img {
+    display: inline-block;
+    width: 100%;
+    height: 165px;
+    margin-bottom: 10px;
+    background-color: #f7f7f7;
+    border: none;
+    outline: none;
+
+}
+
+.product figcaption {
+    width: 187px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    text-transform: none;
+    margin: 0 auto 10px;
+    min-height: 36px;
+    overflow: hidden;
+}
+
+.product figcaption strong {
+    text-transform: uppercase;
+}
+
+.product .btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 78px;
+}
+
+.product .price {
+    display: inline-block;
+    vertical-align: middle;
+    width: 109px;
+    height: 43px;
+    margin-left: 15px;
+    text-align: center;
+    background-color: #e5e5e5;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 43px;
+    text-transform: uppercase;
+}
+
 
 
 
@@ -1191,7 +1261,8 @@ footer {
     color: #4272db;
 }
 
-/*.overlay {
+.overlay {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -1199,7 +1270,7 @@ footer {
     height: 100%;
     z-index: 18;
     background-color: rgba(0,0,0,0.7);
-}*/
+}
 
 .modal-login {
     display: none;
