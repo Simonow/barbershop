@@ -879,13 +879,19 @@ body > nav {
 
 }
 
-.product figcaption {
+.product a {
+    text-decoration: none;
+}
+
+.product a figcaption {
     width: 187px;
     font-family: inherit;
     font-size: 14px;
     font-weight: bold;
     line-height: 18px;
+    color: #000;
     text-transform: none;
+    text-decoration: none;
     margin: 0 auto 10px;
     min-height: 36px;
     overflow: hidden;
