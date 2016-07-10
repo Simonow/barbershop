@@ -563,7 +563,7 @@ body > nav {
     position: relative;
     z-index: 5;
     background: #f8f5f2 url(../pics/noize.png) repeat;
-    padding: 55px 0 80px;
+    padding: 55px 0 50px;
     font-size: 0;
     box-sizing: border-box;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.8);
@@ -731,6 +731,7 @@ body > nav {
 
 .inner-page .inline-block {
     clear: both;
+    margin-bottom: 30px;
 }
 
 .inner-page table {
@@ -883,7 +884,7 @@ body > nav {
     text-decoration: none;
 }
 
-.product a figcaption {
+.product figcaption {
     width: 187px;
     font-family: inherit;
     font-size: 14px;
@@ -922,6 +923,21 @@ body > nav {
     text-transform: uppercase;
 }
 
+.pagination ul {
+    padding: 0;
+    margin-left: 238px;
+}
+
+.pagination li {
+    display: inline-block;
+}
+
+.pagination a {
+    width: 43px;
+    margin-top: 25px;
+    margin-right: 7px;
+    font-size: 14px;
+}
 
 
 
