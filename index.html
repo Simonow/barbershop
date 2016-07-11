@@ -21,7 +21,7 @@
             </ul>
         </div>
         <div class="user">
-            <a href="#" class="login"><i class="fa fa-sign-in"></i>ВХОД</a>
+            <a href="#" class="login" id="login-btn"><i class="fa fa-sign-in"></i>ВХОД</a>
         </div>
     </div>
 </nav>
@@ -108,15 +108,15 @@
         </section>
     </div>
 </footer>
-<div class="modal-map">
+<div class="modal-map" id="modal-map">
     <div id="map"></div>
     <button>Close</button>
 </div>
-<div class="modal-login">
+<div class="modal-login" id="login">
     <button class="close">Close</button>
     <h2>Личный кабинет</h2>
     <p>введите пожалуйста свой логин и пароль</p>
-    <input type="text" name="login" id="login" placeholder="логин" required>
+    <input type="text" name="login" id="modal-login" placeholder="логин" required>
     <input type="password" name="password" id="pass" placeholder="пароль" required>
     <label for="remember">
         <input type="checkbox" id="remember" name="remember">
@@ -126,6 +126,7 @@
     <button type="submit" class="btn">ВОЙТИ</button>
 </div>
 <div class="overlay"></div>
+<script src="script.js"></script>
 <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDB8j_De805Tg4CwHRPkgbOKKH0mqK0w6Q&sensor=false&extension=.js'></script>
 <script>
     google.maps.event.addDomListener(window, 'load', init);

@@ -1522,3 +1522,16 @@ footer {
 .modal-login input[type=checkbox] {
     display: none;
 }
+
+.show-map {
+    display: block;
+    animation: bounce 0.8s;
+}
+
+@keyframes bounce {
+    0%   {transform: translateY(-2000px);}
+    70%  {transform: translateY(40px);   }
+    90%  {transform: translateY(-20px);  }
+    100% {transform: translateY(0);      }
+
+}
