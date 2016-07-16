@@ -60,7 +60,6 @@
             <time>19 сентября</time>
             <a href="" class="btn">Все новости</a>
         </div>
-        <!--img class="divider" src="" alt="divider" width="8px" height="278px"-->
         <div class="gallery">
             <h2>Фотогалерея</h2>
             <img src="pics/gal02.jpg" alt="gallery-pic" class="gallery-smpic" width="286px" height="164px">
@@ -74,10 +73,9 @@
             <p>барбершоп «Бородинский»<br>адрес: г. санкт-петербург, б.конюшенная, д.19/8<br>телефон:
                 +7 (495) 666-02-66</p>
             <p>время работы:<br>пн - пт: с 10:00 до 22:00<br>сб - вс: с 10:00 до 19:00</p>
-            <a href="" class="btn howtogo">Как проехать</a>
-            <a href="" class="btn">Обратная связь</a>
+            <a href="#" class="btn howtogo" id="howtogo">Как проехать</a>
+            <a href="#" class="btn">Обратная связь</a>
         </div>
-        <!--img class="divider" src="" alt="divider" width="8px" height="278px"-->
         <div class="sign">
             <h2>Записаться</h2>
             <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
@@ -110,10 +108,10 @@
 </footer>
 <div class="modal-map" id="modal-map">
     <div id="map"></div>
-    <button>Close</button>
+    <button id="map-close">Close</button>
 </div>
 <div class="modal-login" id="login">
-    <button class="close">Close</button>
+    <button class="close" id="login-close">Close</button>
     <h2>Личный кабинет</h2>
     <p>введите пожалуйста свой логин и пароль</p>
     <input type="text" name="login" id="modal-login" placeholder="логин" required>
@@ -123,7 +121,7 @@
         <span class="remember-indicator"></span>запомните меня
     </label>
     <a href="#">я забыл пароль!</a>
-    <button type="submit" class="btn">ВОЙТИ</button>
+    <button type="submit" class="btn" id="login-submit">ВОЙТИ</button>
 </div>
 <div class="overlay"></div>
 <script src="script.js"></script>

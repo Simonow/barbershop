@@ -1523,9 +1523,13 @@ footer {
     display: none;
 }
 
-.show-map {
+.show {
     display: block;
-    animation: bounce 0.8s;
+    animation: bounce .7s;
+}
+
+.show-map {
+    display: inline-block;
 }
 
 @keyframes bounce {
@@ -1533,5 +1537,15 @@ footer {
     70%  {transform: translateY(40px);   }
     90%  {transform: translateY(-20px);  }
     100% {transform: translateY(0);      }
+
+}
+
+@keyframes apear {
+    0%    {opacity: .2;}
+    20%   {opacity: .4;}
+    40%   {opacity: .6;}
+    60%   {opacity: .8;}
+    80%   {opacity: .9;}
+    100%  {opacity:  1;}
 
 }
